@@ -1,0 +1,243 @@
+/* Registration Page Styles */
+.auth-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 80vh;
+  padding: 20px;
+  direction: rtl;
+}
+
+.auth-form {
+  width: 100%;
+  max-width: 500px;
+  background: #fff;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.auth-form h2 {
+  color: #e30613;
+  text-align: center;
+  margin-bottom: 25px;
+  font-size: 24px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 600;
+  color: #333;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 12px 15px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-size: 16px;
+  transition: border 0.3s;
+}
+
+.form-group input:focus {
+  border-color: #e30613;
+  outline: none;
+}
+
+.error-message {
+  color: #e30613;
+  background: #ffebee;
+  padding: 12px;
+  border-radius: 6px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.submit-btn {
+  width: 100%;
+  padding: 12px;
+  background: #e30613;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s;
+  margin-top: 10px;
+}
+
+.submit-btn:hover {
+  background: #c00511;
+}
+
+.submit-btn:disabled {
+  background: #cccccc;
+  cursor: not-allowed;
+}
+
+.verification-step {
+  margin-top: 20px;
+}
+
+.verification-info {
+  color: #666;
+  font-size: 14px;
+  margin-top: 8px;
+  text-align: center;
+}
+
+.resend-code {
+  background: none;
+  border: none;
+  color: #e30613;
+  cursor: pointer;
+  font-size: 14px;
+  margin: 15px auto;
+  display: block;
+  text-decoration: underline;
+}
+
+.resend-code:hover {
+  color: #c00511;
+}
+
+.resend-code:disabled {
+  color: #999;
+  text-decoration: none;
+  cursor: not-allowed;
+}
+
+.auth-footer {
+  text-align: center;
+  margin-top: 25px;
+  color: #666;
+}
+
+.auth-footer a {
+  color: #e30613;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.auth-footer a:hover {
+  text-decoration: underline;
+}
+
+/* Videos Page Styles */
+.videos-page {
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.page-title {
+  color: #e30613;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.video-section {
+  margin-bottom: 40px;
+}
+
+.section-title {
+  color: #333;
+  border-bottom: 2px solid #e30613;
+  padding-bottom: 8px;
+  margin-bottom: 20px;
+}
+
+.videos-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  gap: 25px;
+}
+
+.video-card {
+  background: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+}
+
+.video-card:hover {
+  transform: translateY(-5px);
+}
+
+.video-wrapper {
+  position: relative;
+  padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
+  height: 0;
+  overflow: hidden;
+}
+
+.video-wrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+.video-card h3 {
+  padding: 15px;
+  margin: 0;
+  color: #333;
+  font-size: 18px;
+}
+
+.video-description {
+  padding: 0 15px 15px;
+  margin: 0;
+  color: #666;
+  font-size: 14px;
+}
+
+.upgrade-banner {
+  background: #f8f8f8;
+  border: 1px dashed #e30613;
+  border-radius: 8px;
+  padding: 30px;
+  text-align: center;
+  margin-top: 40px;
+}
+
+.upgrade-banner h3 {
+  color: #e30613;
+  margin-bottom: 10px;
+}
+
+.upgrade-banner p {
+  color: #666;
+  margin-bottom: 20px;
+}
+
+.upgrade-button {
+  display: inline-block;
+  background: #e30613;
+  color: white;
+  padding: 10px 25px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+
+.upgrade-button:hover {
+  background: #c00511;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .videos-grid {
+    grid-template-columns: 1fr;
+  }
+}
